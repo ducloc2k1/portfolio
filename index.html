@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!--===== SWIPER CSS =====-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    
+    <!--===== BOX ICONS =====-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--===== css =====-->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -20,7 +26,7 @@
             <a href="#" class="nav__logo">Duc Loc</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__intem"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__intem"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__intem"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__intem"><a href="#service" class="nav__link">Service</a></li>
                     <li class="nav__intem"><a href="#portfolio" class="nav__link">Portfolio</a></li>
@@ -85,7 +91,7 @@
         </section>
 
         <!--===== QUALIFICATION =====-->
-        <section class="qualification section bd-container" id="qualification">
+        <section class="qualification section bd-container">
             <span class="section-subtitle">Experience and education</span>
             <h2 class="section-title">Qualification</h2>
 
@@ -214,7 +220,7 @@
         </section>
         
         <!--===== PROJECT IN MIND =====-->
-        <section class="bd-container section project" id="project">
+        <section class="bd-container section project">
             <div class="project__container bd-grid">
                 <div class="project__data">
                     <i class="bx bx-chat project__icon"></i>
@@ -228,7 +234,109 @@
                 </div>
             </div>
         </section>
+        
+        <!--===== PROJECT IN MIND =====-->
+        <section class="portfolio section bd-container" id="portfolio">
+            <span class="section-subtitle">My recent works</span>
+            <h2 class="section-title">Portfolio</h2>           
+            <div class="portfolio__nav">
+                <span class="portfolio__item" data-filter="all" >All</span>
+                <span class="portfolio__item" data-filter=".web" >Web</span>
+                <span class="portfolio__item" data-filter=".ux" >Ui/Ux</span>
+                <span class="portfolio__item" data-filter=".app" >App</span>
+            </div>     
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__content mix web">
+                    <a href=""><img src="assets/img/work1.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Web development</span>
+                        <h3 class="portfolio__title">New portfolio of work done for client</h3>
+                        <a href="" class="button-link button">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix web">
+                    <a href=""><img src="assets/img/work2.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Web development</span>
+                        <h3 class="portfolio__title">New portfolio of work done for client</h3>
+                        <a href="" class="button-link button">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix ux">
+                    <a href=""><img src="assets/img/work3.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Ux design</span>
+                        <h3 class="portfolio__title">New portfolio of work done for client</h3>
+                        <a href="" class="button-link button">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix ux">
+                    <a href=""><img src="assets/img/work4.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Ux design</span>
+                        <h3 class="portfolio__title">New portfolio of work done for client</h3>
+                        <a href="" class="button-link button">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix app">
+                    <a href=""><img src="assets/img/work5.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Mobile app</span>
+                        <h3 class="portfolio__title">New portfolio of work done for client</h3>
+                        <a href="" class="button-link button">View Details</a>
+                    </div>
+                </div>
+                <div class="portfolio__content mix app">
+                    <a href=""><img src="assets/img/work6.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Mobile app</span>
+                        <h3 class="portfolio__title">New portfolio of work done for client</h3>
+                        <a href="" class="button-link button">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--===== TESTIMONIAL =====-->
+        <section class="bd-container testimonial section">
+            <span class="section-subtitle">My client saying</span>
+            <h2 class="section-title">Testimonial</h2>
+            <div class="testimonial__container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__content swiper-slide">
+                        <img src="assets/img/testimonial1.jpg" alt="" class="testmonical__img">
+                        <h3 class="testmonial__title">Nil Holly</h3>
+                        <span class="testmonial__client">client</span>
+                        <p class="testmonial__description">This company does a very good service, offer the bests deal and does a good job, I recommed it.</p>
+                    </div>
+
+                    <div class="testimonial__content swiper-slide">
+                        <img src="assets/img/testimonial2.jpg" alt="" class="testmonical__img">
+                        <h3 class="testmonial__title">Sara Mill</h3>
+                        <span class="testmonial__client">client</span>
+                        <p class="testmonial__description">This company does a very good service, offer the bests deal and does a good job, I recommed it.</p>
+                    </div>
+
+                    <div class="testimonial__content swiper-slide">
+                        <img src="assets/img/testimonial3.jpg" alt="" class="testmonical__img">
+                        <h3 class="testmonial__title">Clay Mitchell</h3>
+                        <span class="testmonial__client">client</span>
+                        <p class="testmonial__description">This company does a very good service, offer the bests deal and does a good job, I recommed it.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
+
+    <!--===== MIXITUP FILTER =====-->
+    <script src="assets/js/mixitup.js"></script>
+
+    <!--===== SWIPER JS =====-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--===== GSAP =====-->
+
+    <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
 </body>
 

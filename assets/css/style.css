@@ -241,6 +241,7 @@ img{
 .show-scroll{
     visibility: visible;
     bottom: 1.5rem;
+    color: var(--first-color-lighten);
 }
 
 /*===== HOME =====*/
@@ -335,6 +336,15 @@ img{
     color: var(--first-color-lighten);
 }
 
+.button-link{
+    background: none;
+    color: var(--first-color);
+    padding: 0;
+}
+
+.button-link:hover{
+    background: none;
+}
 /*===== ABOUT =====*/
 .about__data{
     text-align: center;
@@ -456,4 +466,83 @@ img{
 
 .project__description{
     margin-bottom: var(--mb-4);
+}
+
+/*===== PORTFOLIO =====*/
+.portfolio__nav{
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
+
+.portfolio__item{
+    margin: 0 var(--mb-2);
+    cursor: pointer;
+}
+
+.portfolio__content{
+    background-color: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(174, 190, 205, .3);
+}
+
+.portfolio__img{
+    width: 100%;
+    transition: .4s;
+}
+
+.portfolio__data{
+    padding: 1.5rem;
+}
+
+.portfolio__subtitle{
+    font-size: var(--small-font-size);
+    color: var(--first-color-light);
+    margin: var(--mb-2) 0;
+}
+
+.portfolio__content:hover{
+    box-shadow: 0 6px 8px rgba(174, 190, 205, .4);
+}
+
+.portfolio__content:hover .portfolio__img{
+    transform: scale(1.02);
+}
+
+.active-portfolio{
+    color: var(--first-color-dark);
+    font-weight: var(--font-semi-bold);
+}
+
+/*===== TESTMONIAL =====*/
+.testimonial__content{
+    display: grid;
+    background-color: var(--first-color-dark);
+    color: var(--first-color-lighten);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    box-shadow: 0 4px 8px rgba(47, 10, 13, .2);
+    text-align: center;
+}
+
+.testmonical__img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: var(--mb-1);
+}
+
+.testmonial__client{
+    font-size: var(--small-font-size);
+    color: var(--first-color-light);
+    margin-bottom: var(--mb-2);
+}
+
+.swiper-pagination{
+    position: initial;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
 }
